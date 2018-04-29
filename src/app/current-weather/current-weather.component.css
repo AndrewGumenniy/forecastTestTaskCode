@@ -1,0 +1,26 @@
+.weather-text-blocks {
+	margin-top: 10px;
+    text-align: center;
+}
+.location {
+    font-size: 18px;
+    line-height: 38px;
+}
+.temperature {
+    font-size: 29px;
+    line-height: 30px;
+}
+.weather img{
+	display: inline-block;
+	vertical-align: middle;
+}
+.weather span{
+	display: inline-block;
+	vertical-align: middle;
+}
+.weather-indicators {
+    line-height: 34px;
+}
+.weather-indicators span {
+    margin-right: 11px;
+}

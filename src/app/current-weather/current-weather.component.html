@@ -1,0 +1,26 @@
+  <div class="item" *ngFor="let item of currentWeatherItem">
+    
+     <div  class="weather-image">
+        <span title="{{item.weatherInfo}}" class="icon-middle icon{{item.weatherIcon}}"></span>
+      </div>
+      <div class="weather-text-blocks">
+  	    <div class="location">
+  	      <span class="city">{{item.city}},</span>
+  	      <span class="country">{{item.country}}</span>	      
+  	    </div>
+  	    <div class="temperature">
+  	      <span class="city"><b>{{item.temperature| number:'1.0-0'}}</b>°C</span>
+  	    </div>
+  	    <div class="weather">
+  	      <img src="https://www.weatherbit.io/static/img/icons/{{item.weatherIcon}}.png"  width="20px" height="20px" alt="">
+  	      <span class="description">{{item.weatherDescription}}</span>
+  	    </div>
+  	    <div class="weather-indicators">
+    	    <span><b>Pressure:</b> {{item.pressure}}</span>
+    	    <span><b>Humidity:</b> {{item.humidity}}%</span>
+    	    <span><b>Wind Speed:</b> {{item.wind| number:'1.0-1'}}m/s</span>
+    	    <span><b>Clouds:</b> {{item.cloudiness}}%</span>
+  	    </div>
+      </div>
+	 
+  </div> 
